@@ -171,7 +171,7 @@ const FAQ = () => {
               Not at all. Enterprise leaders will benefit from decentralized governance of critical
               enterprise initiatives. This is not about control, but consensus. As several large tech
               companies have recently discovered, leadership can no longer afford to ignore the
-              personal narratives of enterpise constituents. Their authority remains the same, and
+              personal narratives of enterprise constituents. Their authority remains the same, and
               their vision actually increases with the synergy.
             </Typography>
           </ExpansionPanelDetails>

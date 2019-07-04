@@ -34,6 +34,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: 'inherit',
     marginRight: theme.spacing(2),  
   },
+  mediumLink: {
+    textDecoration: 'underline',
+    color: 'inherit',
+    marginLeft: theme.spacing(1),
+    fontWeight: theme.typography.fontWeightRegular,
+  },
   tagline: {
     display: 'inline-block',
     marginLeft: 10,
@@ -63,6 +69,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 const gitHub="https://github.com/smartnarrative";
+const medium="https://woodylewis.com/smart-narrative-network-5a4090de5cff";
 
 const FAQ = () => {
   const classes = useStyles();
@@ -103,6 +110,40 @@ const FAQ = () => {
           </Typography>
       </Container>
         <div className={classes.root}>
+        <ExpansionPanel>
+          <ExpansionPanelSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className={classes.heading}>What is Smart Narrative Network?</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <Typography>A narrative network enables an enterprise to manage its decentralized strategy framework (DSF). 
+              This article explains: 
+              <a className={classes.mediumLink} href={medium} target="_blank" rel="noopener noreferrer">
+                Smart Narrative Network
+                </a>      
+            </Typography>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+
+        <ExpansionPanel>
+          <ExpansionPanelSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className={classes.heading}>What do the four objects in each epic represent?</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <Typography>These are mock events, occuring in each of the four data channels: governance, finance, marketing and production. Clicking on an event
+              displays the channel and mock data source. In this example, the four events occur in each epic in the space of about one second. In reality,
+              events will occur at different frequencies, and the interface will provide the ability to navigate those frequencies.
+            </Typography>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+        
         <ExpansionPanel>
           <ExpansionPanelSummary
             expandIcon={<ExpandMoreIcon />}

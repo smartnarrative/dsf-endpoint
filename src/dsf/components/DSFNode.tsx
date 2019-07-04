@@ -80,9 +80,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexGrow: 1,
   },
   event: {
-    margin: theme.spacing(0.5),
+    margin: theme.spacing(0),
     paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
+    // paddingBottom: theme.spacing(1),
+    padding: theme.spacing(1),
+    textAlign: 'center',
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -274,9 +276,9 @@ export default function DSFNode() {
                         <Typography variant="body1" color="textPrimary" align="left">
                           {epic.type} Epic - Story: {epic.storyMap[0].storyType}
                         </Typography>
-                        <Grid container direction="column" justify="center">
+                        <Grid container item xs={12} spacing={3}>
                           {epic.storyMap[0].eventMap.map((event, eventIndex) => (
-                            <Grid item key={eventIndex} xs={2} sm={1}>
+                            <Grid item key={eventIndex} xs={3}>
                               <Fade in={true} timeout={event.delay}>
                                <Chip size="small"
                                   className={classes.event} 

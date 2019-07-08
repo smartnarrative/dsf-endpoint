@@ -1,4 +1,4 @@
-# DSF Node
+# DSF Endpoint
 
 Endpoint for a full-stack TypeScript decentralized strategy application.
 

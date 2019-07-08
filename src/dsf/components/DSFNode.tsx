@@ -307,12 +307,12 @@ export default function DSFNode() {
                         <Typography variant="body1" color="textPrimary" align="left">
                           {epic.type} Epic - Story: {epic.storyMap[0].storyType}
                         </Typography>
-                        <Grid container direction="column" justify="center">
+                        <Grid container item xs={12} spacing={3}>
                           {epic.storyMap[0].eventMap.map((event, eventIndex) => (
-                            <Grid item key={eventIndex} xs={2} sm={1}>
+                            <Grid item key={eventIndex} xs={3}>
                               <Fade in={true} timeout={event.delay}>
                                <Chip size="small"
-                                  className={classes.event}  
+                                  className={classes.event} 
                                   icon={channelIcon(event)}
                                   label={event.label}
                                   clickable
@@ -338,12 +338,12 @@ export default function DSFNode() {
                         <Typography variant="body1" color="textPrimary" align="left">
                           {epic.type} Epic - Story: {epic.storyMap[0].storyType}
                         </Typography>
-                        <Grid container direction="column">
+                        <Grid container item xs={12} spacing={3}>
                           {epic.storyMap[0].eventMap.map((event, eventIndex) => (
-                            <Grid item key={eventIndex} xs={2} sm={1}>
+                            <Grid item key={eventIndex} xs={3}>
                               <Fade in={true} timeout={event.delay}>
                                <Chip size="small"
-                                  className={classes.event}  
+                                  className={classes.event} 
                                   icon={channelIcon(event)}
                                   label={event.label}
                                   clickable
